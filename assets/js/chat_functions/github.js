@@ -25,4 +25,3 @@ $(document).ready(function(){
   });
 
 });
-Status API Training Shop Blog About
