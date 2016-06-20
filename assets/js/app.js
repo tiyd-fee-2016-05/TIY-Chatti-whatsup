@@ -18,12 +18,6 @@ $(document).ready(function(){
       // $('.chatcontent').scrollTop('100%');
     }
 
-
-
-
-
-
-
   });
 
 });

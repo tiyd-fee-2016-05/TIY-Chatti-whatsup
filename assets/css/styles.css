@@ -42,6 +42,8 @@
   border-bottom-right-radius: 2px;
   text-align: left;
   margin: 15px;
+  line-height: 1.5;
+  /*display: block;*/
 }
 
 .newmessage {
@@ -67,6 +69,12 @@
   vertical-align: middle;
   margin-left: 10px;
   cursor: pointer;
+}
+
+.ghimage {
+  height: 80px;
+  width: auto;
+  /*display: inline;*/
 }
 
 button:active {
