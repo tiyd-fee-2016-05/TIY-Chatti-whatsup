@@ -4,7 +4,7 @@ $(document).ready(function(){
   e.preventDefault();
   console.log("Submit works");
 
-    if ($('input').val() === "@gh" + " " + "dgrayboff") {
+    if ($('input').val() === "@gh" + " " + "dgrayboff") { // maybe make this an array and call the [1] --> the second string in the array, then take the value of that and use that to search, as in line 11 below --> the url endpoint //
       console.log("github!");
 
       $.ajax({
