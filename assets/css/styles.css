@@ -21,13 +21,27 @@
 }
 
 .contentcontainer {
-  padding: 65%;
+  padding: 20px;
+  height: 450px;
+  font-size: 18px;
 }
 
 .messagebox {
   border-top: 2px solid #456E6A;
   padding: 10px 20px 10px 20px;
   margin: auto;
+}
+
+.chatcontent {
+  background-color: lightgray;
+  padding: 15px;
+  /*display: none;*/
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 2px;
+  text-align: left;
+  margin: 15px;
 }
 
 .newmessage {
@@ -37,6 +51,10 @@
   vertical-align: middle;
   border-radius: 5px;
   text-indent: 10px;
+}
+
+::-webkit-input-placeholder {
+  font-size: 12px;
 }
 
 .sendbutton {
