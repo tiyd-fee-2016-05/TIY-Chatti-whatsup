@@ -7,10 +7,10 @@ $(document).ready(function(){
     if ($('input').val().toLowerCase() === "@help") {
       console.log("help!");
 
-      $('ul').append("<li class='chatcontent'>" + $('input').val() + ":" + "</li>");
+      $('ul').append("<li class='chatcontent commandstyle'>" + $('input').val() + ":" + "</li>");
 
       $('ul').append("<li class='chatcontent'>" + "@help - Available commands" + "<br>" + "<br>" +
-      "@github - User's basic GitHub profile information" + "<br>" + "<br>" +
+      "@gh - User's basic GitHub profile information" + "<br>" + "<br>" +
       "@gif - Gif that matches search query" + "<br>" + "<br>" +
       "@temp - Location's current temperature" + "<br>" + "<br>" +
       "@wiki - Wikipedia article related to search query" + "</li>");
