@@ -1,5 +1,6 @@
-/*body {
-}*/
+body {
+
+}
 
 .wrapper {
   border: 3px solid #456E6A;
@@ -7,7 +8,9 @@
   font-weight: 700;
   font-size: 40px;
   text-align: center;
-  width: 370px;
+  width: 90%;
+  /*width: 800px;*/
+  /*width: 370px;*/
   margin: 20px auto;
   border-radius: 5px;
 }
@@ -25,9 +28,12 @@
 }
 
 .contentcontainer {
-  padding: 20px;
-  height: 450px;
+  padding: 40px;
+  height: 400px;
+  /*padding: 20px;
+  height: 450px;*/
   font-size: 18px;
+  background-color: lightblue;
 }
 
 .messagebox {
@@ -120,9 +126,12 @@ footer {
 }
 
 
-/*@media (min-width: 375px, max-width: 667px) {
+
+
+@media (min-width: 375px, max-width: 667px) {
     .contentcontainer {
-     height: 667px;
-     width: 375px;
+     max-width: 667px;
+     min-width: 375px;
+
     }
-  }*/
+  }
