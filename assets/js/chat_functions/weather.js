@@ -19,13 +19,14 @@ $(document).ready(function(){
       // console.log(weather);
 
       $.ajax({
-              url: "http://api.wunderground.com/api/35c9d364b4732721/conditions/q/"+ state/ + city +".json",
+              url: "https://api.wunderground.com/api/35c9d364b4732721/forecast/q/" + state + "/" + city + "/" + ".json",
               method: 'GET',
               dataType: "JSON",
               success: function(json) {
                 $('ul').append("<li class='chatcontent commandstyle'>" + "@weather:" + "</li>");
-                $('ul').append("<li class='chatcontent'>" + json.city  + " " +  "," + json.state + " " + "/></li>");
+                $('ul').append("<li class='chatcontent'>" + json.forecast.txt_forecast.forecastday[0].fcttext + "<br>" +  "<img class='weatherimg' src='" + json.forecast.txt_forecast.forecastday[0].icon_url + "'>"  +  "<img class='weatherimg' src='" + json.forecast.txt_forecast.forecastday[0].icon_url + "'>"  +  "<img class='weatherimg' src='" + json.forecast.txt_forecast.forecastday[0].icon_url + "'>"  + "<img class='weatherimg' src='" + json.forecast.txt_forecast.forecastday[0].icon_url + "'>" + "<img class='weatherimg' src='" + json.forecast.txt_forecast.forecastday[0].icon_url + "'>" + "</li>");
                 console.log(json);
+                console.log(json.forecast.txt_forecast.forecastday[0].icon_url );
               }
             });
     }
