@@ -15,7 +15,9 @@ $(document).ready(function(){
       "@gh - User's basic GitHub profile information" + "<br>" + "<br>" +
       "@gif - Gif that matches search query" + "<br>" + "<br>" +
       "@weather - Location's current temperature" + "<br>" + "<br>" +
-      "@wiki - Wikipedia article related to search query" + "</li>");
+
+      "@wiki - Wikipedia article related to search query" + "<br>" + "<br>" + "Ex: @weather durham, nc" + "</li>");
+
 
       $('input').val("");
 

@@ -22,7 +22,9 @@ $(document).ready(function(){
               success: function(json) {
                 $('ul').append("<li class='chatcontent commandstyle'>" + "@gh:" + "</li>");
                 $('ul').append("<li class='chatcontent'>" + json.name + "<br>" + "<img class='ghimage' src=" + json.avatar_url + "/>"  + "<br>" + "Repos: " + json.public_repos + "<br>" + "<a class='urllink' href=" + json.html_url + ">" + "Link to Profile" + "</a>" + "</li>");
+                
                 console.log(json);
+
                 $('input').val("");
               }
             });

@@ -98,6 +98,16 @@ body {
   display: inline-block;
 }
 
+.weatherimg {
+  background-color: lightgray;
+  /*display: none;*/
+  border-radius: 7px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
 .urllink {
   text-decoration: none;
   color: #456E6A;
