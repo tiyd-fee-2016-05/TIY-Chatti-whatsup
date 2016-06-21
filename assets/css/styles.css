@@ -1,5 +1,4 @@
 /*body {
-
 }*/
 
 .wrapper {
@@ -18,6 +17,11 @@
   padding: 10px;
   background-color: #53918B;
   color: #fff;
+}
+
+.scroll{/**  RG  scroll bar 6/21  **/
+  height: 100px;
+  overflow-y: scroll;
 }
 
 .contentcontainer {

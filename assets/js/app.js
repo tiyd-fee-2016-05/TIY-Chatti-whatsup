@@ -4,6 +4,9 @@ $(document).ready(function(){
   e.preventDefault();
   console.log("Submit works");
 
+
+
+
     if ($('input').val().toLowerCase() === "@help") {
       console.log("help!");
 
