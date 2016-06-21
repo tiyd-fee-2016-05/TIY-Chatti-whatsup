@@ -8,7 +8,7 @@ TIY Assignment - Rhonda &amp; David
   * added Giphy api ajax call.
   * vertical scroll.
 
-David
+ David
 
   * completed github ajax code & added more content
   * got text input command to talk to ajax call
