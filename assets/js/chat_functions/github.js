@@ -20,7 +20,7 @@ $(document).ready(function(){
               dataType: "JSON",
               success: function(json) {
                 $('ul').append("<li class='chatcontent'>" + "@gh:" + "</li>");
-                $('ul').append("<li class='chatcontent'>" + json.name + "<br>" + "Repos: " + json.public_repos + "<img class='chatcontent ghimage' src=" + json.avatar_url + "/>" + "</li>");
+                $('ul').append("<li class='chatcontent'>" + json.name + "<br>" + "<img class='chatcontent ghimage' src=" + json.avatar_url + "/>"  + "<br>" + "Repos: " + json.public_repos + "<br>" + "<a href=" + json.html_url + ">" + "Link to Profile" + "</a>" + "</li>");
                 console.log(json);
               }
             });
