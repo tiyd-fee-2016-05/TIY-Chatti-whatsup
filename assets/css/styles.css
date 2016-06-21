@@ -25,6 +25,12 @@ body {
   background-image: -webkit-linear-gradient(#124F57, #53918B);
 }
 
+.fa{
+  color: #02BFC9;
+  /*font-size: px;*/
+  padding-right: 7px;
+}
+
 .scroll{/**  RG  scroll bar 6/21  **/
   /*height: 100px;*/
   overflow-y: auto;
@@ -135,6 +141,8 @@ body {
   font-weight: bold;
   background-color: #124F57;
 }
+
+
 
 button:active {
     background-color: yellow;
