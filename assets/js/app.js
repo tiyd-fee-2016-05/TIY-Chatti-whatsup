@@ -4,8 +4,7 @@ $(document).ready(function(){
   e.preventDefault();
   console.log("Submit works");
 
-
-
+  $(".contentcontainer").animate({ scrollTop: $(".contentcontainer")[0].scrollHeight}, 1000);
 
     if ($('input').val().toLowerCase() === "@help") {
       console.log("help!");
@@ -18,8 +17,11 @@ $(document).ready(function(){
       "@temp - Location's current temperature" + "<br>" + "<br>" +
       "@wiki - Wikipedia article related to search query" + "</li>");
 
+      $('input').val("");
+
       // $('.chatcontent').scrollTop('100%');
     }
+
 
   });
 
