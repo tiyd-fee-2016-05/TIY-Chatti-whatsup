@@ -66,7 +66,7 @@
 .sendbutton {
   height: 40px;
   width: 45px;
-  background-image: -webkit-linear-gradient(#ACB5B5, #CDD3D4);
+  background-image: -webkit-linear-gradient(#ACB5B5, #FFF);
   border: 1px solid #456E6A;
   border-right: : none;
   border-radius: 3px;
@@ -76,9 +76,22 @@
 }
 
 .ghimage {
-  height: 80px;
+  height: 100px;
   width: auto;
-  /*display: inline;*/
+  margin: 0;
+  border-radius: 7px;
+  padding: 1px;
+  display: inline-block;
+}
+
+.urllink {
+  text-decoration: none;
+  color: #456E6A;
+}
+
+.commandstyle {
+  font-weight: bold;
+  font-style: italic;
 }
 
 button:active {
