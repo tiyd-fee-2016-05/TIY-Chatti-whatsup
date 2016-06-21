@@ -3,7 +3,8 @@ body {
 }
 
 .wrapper {
-  border: 3px solid #456E6A;
+  border: 3px solid #124F57;
+  border-width: 20px;
   font-family: 'Josefin Sans', Verdana, sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -13,18 +14,25 @@ body {
   /*width: 370px;*/
   margin: 20px auto;
   border-radius: 5px;
+
 }
 
 .header {
-  border-bottom: 2px solid #456E6A;
+  border-bottom: 2px solid #fff;
   padding: 10px;
-  background-color: #53918B;
+  background-color: #124F57;
   color: #fff;
+  background-image: -webkit-linear-gradient(#124F57, #53918B);
 }
 
 .scroll{/**  RG  scroll bar 6/21  **/
   /*height: 100px;*/
   overflow-y: auto;
+  background-color: #124F57;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .contentcontainer {
@@ -33,23 +41,26 @@ body {
   /*padding: 20px;
   height: 450px;*/
   font-size: 18px;
-  background-color: lightblue;
+  background-color: #124F57;
+  border-left: 3px solid #124F57;
+  border-right: 3px solid #124F57;
 }
 
 .messagebox {
-  border-top: 2px solid #456E6A;
+  border-top: 2px solid #fff;
   padding: 10px 20px 10px 20px;
   margin: auto;
 }
 
 .chatcontent {
-  background-color: lightgray;
+  background-color: #53918B;
+  color: #fff;
   padding: 15px;
   /*display: none;*/
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 2px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 1px;
   text-align: left;
   margin: 15px;
   line-height: 1.5;
@@ -63,22 +74,29 @@ body {
   vertical-align: middle;
   border-radius: 5px;
   text-indent: 10px;
+  background-color: #FFF;
+  border-style: none;
+  background-image: -webkit-linear-gradient(#ACB5B5, #FFF);
+  /*border: 1px solid #fff;*/
+  color: #124F57;
 }
 
 ::-webkit-input-placeholder {
   font-size: 12px;
+  color: #darkgray;
 }
 
 .sendbutton {
   height: 40px;
   width: 45px;
   background-image: -webkit-linear-gradient(#ACB5B5, #FFF);
-  border: 1px solid #456E6A;
+  border: 1px solid #124F57;
   border-right: : none;
   border-radius: 3px;
   vertical-align: middle;
   margin-left: 10px;
   cursor: pointer;
+  color: #124F57;
 }
 
 .ghimage {
@@ -99,7 +117,7 @@ body {
 }
 
 .weatherimg {
-  background-color: lightgray;
+  background-color: #53918B;
   /*display: none;*/
   border-radius: 7px;
   text-align: left;
@@ -115,6 +133,7 @@ body {
 
 .commandstyle {
   font-weight: bold;
+  background-color: #124F57;
 }
 
 button:active {
@@ -122,7 +141,7 @@ button:active {
 }
 
 footer {
-  background-color: #53918B;
+  background-color: #124F57;
 }
 
 
