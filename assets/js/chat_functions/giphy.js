@@ -8,7 +8,7 @@ $(document).ready(function(){
       var b = a.split(" ");
       var image = b[1];
 
-      if($("input").val()=== "@gif" + " " + image){
+      if(a === "@gif" + " " + image){
         console.log("giphy!");
         console.log(image);
 
@@ -20,8 +20,11 @@ $(document).ready(function(){
               success: function(json){
                 $("ul").append("<li class='chatcontent'>" + "@gif:" + "</li>");
                 $("ul").append("<li class='chatcontent'>" + "<img class='chatcontent gifimage' src='" + json.data.image_url + "'>" + "</li>");
+
                 console.log(json);
                 console.log(json.data.image_url);
+
+                $('input').val("");
               }
 
 
