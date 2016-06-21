@@ -14,8 +14,6 @@ $(document).ready(function(){
       console.log(b);
       console.log(username);
 
-
-
       $.ajax({
               url: "https://api.github.com/users/" + username,
               method: 'GET',
@@ -26,6 +24,6 @@ $(document).ready(function(){
                 console.log(json);
               }
             });
-    }
-  });
+  }
+ });
 });
