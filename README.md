@@ -12,4 +12,4 @@ TIY Assignment - Rhonda &amp; David
 
   * completed github ajax code & added more content
   * got text input command to talk to ajax call
-  * styling
+  * additional styling
