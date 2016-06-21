@@ -4,11 +4,20 @@ $(document).ready(function(){
   e.preventDefault();
   console.log("Submit works");
 
-    if ($('input').val() === "@gh" + " " + "dgrayboff") { // maybe make this an array and call the [1] --> the second string in the array, then take the value of that and use that to search, as in line 11 below --> the url endpoint //
+  var a = $('input').val().toLowerCase();
+  var b = a.split(" ");
+  var username = b[1];
+
+  if (a === "@gh" + " " + username) { // if ($('input').val().toLowerCase() === "@gh" + " " + "dgrayboff")  // maybe make this an array and call the [1] --> the second string in the array, then take the value of that and use that to call API --> the url endpoint //
+
       console.log("github!");
+      console.log(b);
+      console.log(username);
+
+
 
       $.ajax({
-              url: "https://api.github.com/users/" + "dgrayboff",
+              url: "https://api.github.com/users/" + username,
               method: 'GET',
               dataType: "JSON",
               success: function(json) {
@@ -17,11 +26,6 @@ $(document).ready(function(){
                 console.log(json);
               }
             });
-
-
-
     }
-
   });
-
 });

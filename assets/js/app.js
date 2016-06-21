@@ -4,7 +4,7 @@ $(document).ready(function(){
   e.preventDefault();
   console.log("Submit works");
 
-    if ($('input').val() === "@help") {
+    if ($('input').val().toLowerCase() === "@help") {
       console.log("help!");
 
       $('ul').append("<li class='chatcontent'>" + $('input').val() + ":" + "</li>");
