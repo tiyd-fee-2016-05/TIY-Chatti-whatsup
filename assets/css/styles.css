@@ -19,9 +19,9 @@
   color: #fff;
 }
 
-.scroll{
+.scroll{/**  RG  scroll bar 6/21  **/
   height: 100px;
-  overflow-y : scroll;
+  overflow-y: scroll;
 }
 
 .contentcontainer {
