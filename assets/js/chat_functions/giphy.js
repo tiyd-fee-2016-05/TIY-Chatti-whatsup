@@ -4,18 +4,24 @@ $(document).ready(function(){
       e.preventDefault();
       console.log("Giphy submit works");
 
-      if($("input").val()=== "@gif" + " "){
+      var a = $('input').val().toLowerCase();
+      var b = a.split(" ");
+      var image = b[1];
+
+      if($("input").val()=== "@gif" + " " + image){
         console.log("giphy!");
+        console.log(image);
 
 
-        $.ajax({//  there are several different giphy possibilities.  random is only one.
-              url: "http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cats",
+        $.ajax({ //  there are several different giphy possibilities.  random is only one.
+              url: "http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=" + image,
               method: 'GET',
               dataType: 'JSON',
               success: function(json){
-                $("ul").append("<li class='chatcontent'>" + "@gif" + "</li>");
-                $("ul").append("<li class='chatcontent'>" + "<img class='chatcontent gifimage' src=" + json.image_url + "/>" + "</li>");
+                $("ul").append("<li class='chatcontent'>" + "@gif:" + "</li>");
+                $("ul").append("<li class='chatcontent'>" + "<img class='chatcontent gifimage' src='" + json.data.image_url + "'>" + "</li>");
                 console.log(json);
+                console.log(json.data.image_url);
               }
 
 
