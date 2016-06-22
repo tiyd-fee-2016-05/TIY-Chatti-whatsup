@@ -13,7 +13,7 @@ body {
   /*width: 800px;*/
   /*width: 370px;*/
   margin: 20px auto;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
 
 }
 
@@ -25,17 +25,21 @@ body {
   background-image: -webkit-linear-gradient(#124F57, #53918B);
 }
 
-.fa{
-  color: #02BFC9;
+.fa-globe{
+  color: #A2F8FA;
   /*font-size: px;*/
   padding-right: 7px;
-  transition: transform Z(360deg);
-  /*-webkit-animation-name: rotate;
-  -webkit-animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;*/
-
 }
+.rotate{
+  color: #02BFC9;
+  /*font-size: px;*/
+  padding-right: 20px;
+  /*transition-timing: ease-in-out;*/
+  transform: rotate(1080deg);
+  transition-duration: 5s;
+}
+
+
 
 .scroll{/**  RG  scroll bar 6/21  **/
   /*height: 100px;*/
@@ -56,6 +60,12 @@ body {
   background-color: #124F57;
   border-left: 3px solid #124F57;
   border-right: 3px solid #124F57;
+}
+
+.fa.fa-question-circle-o{/*  RG  6/22 */
+  color: #A2F8FA;
+  font-size: 40px;
+  padding-right: 20px;
 }
 
 .messagebox {
