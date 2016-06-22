@@ -1,10 +1,6 @@
-body {
-
-}
-
-.wrapper {
-  border: 3px solid #124F57;
-  border-width: 20px;
+  .wrapper {
+  /*border: 1px solid #124F57;*/
+  /*border-width: 20px;*/
   font-family: 'Josefin Sans', Verdana, sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -14,15 +10,16 @@ body {
   /*width: 370px;*/
   margin: 20px auto;
   /*border-radius: 5px;*/
-
 }
+
+
+
 
 .header {
   border-bottom: 2px solid #fff;
   padding: 10px;
   background-color: #124F57;
   color: #fff;
-  background-image: -webkit-linear-gradient(#124F57, #53918B);
 }
 
 .fa-globe{
@@ -58,8 +55,6 @@ body {
   height: 450px;*/
   font-size: 18px;
   background-color: #124F57;
-  border-left: 3px solid #124F57;
-  border-right: 3px solid #124F57;
 }
 
 .fa.fa-question-circle-o{/*  RG  6/22 */
@@ -90,7 +85,7 @@ body {
 }
 
 .newmessage {
-  height: 40px;
+  height: 35px;
   width: 165px;
   font-size: 18px;
   vertical-align: middle;
@@ -98,7 +93,6 @@ body {
   text-indent: 10px;
   background-color: #FFF;
   border-style: none;
-  background-image: -webkit-linear-gradient(#ACB5B5, #FFF);
   /*border: 1px solid #fff;*/
   color: #124F57;
 }
@@ -109,9 +103,8 @@ body {
 }
 
 .sendbutton {
-  height: 40px;
+  height: 35px;
   width: 45px;
-  background-image: -webkit-linear-gradient(#ACB5B5, #FFF);
   border: 1px solid #124F57;
   border-right: : none;
   border-radius: 3px;
@@ -169,12 +162,44 @@ footer {
 }
 
 
-
-
-@media (min-width: 375px, max-width: 667px) {
-    .contentcontainer {
-     max-width: 667px;
-     min-width: 375px;
-
-    }
+@media (max-width: 667px) {
+  .chatcontent {
+    width: 75%;
+    margin: 15px auto;
   }
+  .contentcontainer {
+    font-size: 14px;
+  }
+  .newmessage {
+    height: 25px;
+    font-size: 14px;
+  }
+  .sendbutton {
+    height: 25px;
+  }
+  .wrapper {
+    font-size: 32px;
+  }
+}
+
+
+@media (min-width: 668px) and (max-width: 849px) {
+  .chatcontent {
+    width: 65%;
+    margin: 15px auto;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 1024px) {
+  .chatcontent {
+    width: 50%;
+    margin: 15px auto;
+  }
+}
+
+@media (min-width: 1025px) {
+  .chatcontent {
+    width: 40%;
+    margin: 15px auto;
+  }
+}

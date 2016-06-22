@@ -24,7 +24,7 @@ $(document).ready(function(){
       $('ul').append("<li class='chatcontent'>" + "@help - Available commands" + "<br>" + "<br>" +
       "@gh - User's basic GitHub profile information" + "<br>" + "<br>" +
       "@gif - Gif that matches search query" + "<br>" + "<br>" +
-      "@weather - Location's current temperature" + "<br>" + "<br>" + "@wiki - Wikipedia article related to search query" + "<br>" + "<br>" + "Ex: @weather durham, nc" + "</li>");
+      "@weather - Location's current temperature" + "<br>" + "<br>" + "Ex: @weather durham, nc" + "</li>");
 
       $('input').val("");
 
@@ -36,7 +36,10 @@ $(document).ready(function(){
       // }
 
 
-      // });
+
+
+
+
   });
 
 });
