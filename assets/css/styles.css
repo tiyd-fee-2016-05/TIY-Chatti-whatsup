@@ -29,6 +29,12 @@ body {
   color: #02BFC9;
   /*font-size: px;*/
   padding-right: 7px;
+  transition: transform Z(360deg);
+  /*-webkit-animation-name: rotate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;*/
+
 }
 
 .scroll{/**  RG  scroll bar 6/21  **/

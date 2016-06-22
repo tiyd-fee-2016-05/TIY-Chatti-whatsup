@@ -2,6 +2,7 @@ $(document).ready(function(){
 
   $('.messagebox').on('submit', function(e) {
   e.preventDefault();
+  
   console.log("Submit works");
 
   $(".contentcontainer").animate({ scrollTop: $(".contentcontainer")[0].scrollHeight}, 1000);
