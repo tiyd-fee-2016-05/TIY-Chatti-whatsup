@@ -1,8 +1,18 @@
 $(document).ready(function(){
 
+  $(".sendbutton").click(function() {
+    $('.fa-globe').addClass("rotate");
+    console.log('rotate');
+  });
+
+
   $('.messagebox').on('submit', function(e) {
   e.preventDefault();
+
   console.log("Submit works");
+
+
+
 
   $(".contentcontainer").animate({ scrollTop: $(".contentcontainer")[0].scrollHeight}, 1000);
 
@@ -24,6 +34,10 @@ $(document).ready(function(){
       // else {
       //   $('ul').append("<li class='chatcontent'>" + $('input').val() + "</li>");
       // }
+
+
+
+
 
 
   });
