@@ -9,9 +9,11 @@
   /*width: 800px;*/
   /*width: 370px;*/
   margin: 20px auto;
-  border-radius: 5px;
-  /*border-top-left-radius: 15px;*/
+  /*border-radius: 5px;*/
 }
+
+
+
 
 .header {
   border-bottom: 2px solid #fff;
@@ -19,6 +21,22 @@
   background-color: #124F57;
   color: #fff;
 }
+
+.fa-globe{
+  color: #A2F8FA;
+  /*font-size: px;*/
+  padding-right: 7px;
+}
+.rotate{
+  color: #02BFC9;
+  /*font-size: px;*/
+  padding-right: 20px;
+  /*transition-timing: ease-in-out;*/
+  transform: rotate(1080deg);
+  transition-duration: 5s;
+}
+
+
 
 .scroll{/**  RG  scroll bar 6/21  **/
   /*height: 100px;*/
@@ -37,6 +55,12 @@
   height: 450px;*/
   font-size: 18px;
   background-color: #124F57;
+}
+
+.fa.fa-question-circle-o{/*  RG  6/22 */
+  color: #A2F8FA;
+  font-size: 40px;
+  padding-right: 20px;
 }
 
 .messagebox {
@@ -126,6 +150,8 @@
   font-weight: bold;
   background-color: #124F57;
 }
+
+
 
 button:active {
     background-color: yellow;
