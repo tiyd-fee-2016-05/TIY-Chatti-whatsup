@@ -8,7 +8,7 @@ $(document).ready(function(){
       var b = a.split(" ");
       var image = b[1];
 
-      if(a === "@gif" + " " + image){
+      if(a === "@gif" + " " + image || a === "@gif" + " " + image + " " + b[2]){ // edit api call for two words
         console.log("giphy!");
         console.log(image);
 
