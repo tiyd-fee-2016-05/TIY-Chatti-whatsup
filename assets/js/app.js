@@ -12,9 +12,7 @@ $(document).ready(function(){
 console.log('rotate');
 
 
-        // else if (counter >= 1)
-        //   $('.fa-globe').addClass("rotate");
-
+      
 
 
 
