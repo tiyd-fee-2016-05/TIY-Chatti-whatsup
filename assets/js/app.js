@@ -1,9 +1,23 @@
 $(document).ready(function(){
 
-  $(".sendbutton").click(function() {
-    $('.fa-globe').addClass("rotate");
-    console.log('rotate');
-  });
+
+
+
+      $(".sendbutton").click(function(){
+        $('.fa-globe').addClass("rotate");
+        setTimeout(function(){
+        $(".fa-globe").removeClass("rotate");
+},5000);
+});
+console.log('rotate');
+
+
+        // else if (counter >= 1)
+        //   $('.fa-globe').addClass("rotate");
+
+
+
+
 
 
   $('.messagebox').on('submit', function(e) {
