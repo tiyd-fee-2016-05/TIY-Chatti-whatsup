@@ -1,3 +1,7 @@
+body {
+  background-color: #124F57;
+}
+
   .wrapper {
   /*border: 1px solid #124F57;*/
   /*border-width: 20px;*/
@@ -5,10 +9,10 @@
   font-weight: 700;
   font-size: 40px;
   text-align: center;
-  width: 90%;
+  width: 100%;
   /*width: 800px;*/
   /*width: 370px;*/
-  margin: 20px auto;
+  margin: 0;
   /*border-radius: 5px;*/
 }
 
@@ -16,7 +20,7 @@
 .header {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #53918B;
   padding: 10px;
   background-color: #124F57;
   color: #fff;
@@ -76,8 +80,8 @@
 
 
 .messagebox {
-  border-top: 2px solid #fff;
-  padding: 10px 20px 10px 20px;
+  border-top: 2px solid #53918B;
+  padding: 15px 20px 10px 20px;
   margin: auto;
 }
 
@@ -139,15 +143,16 @@
 
 /***      APIs      ***/
 .ghimage {
-  height: 100px;
-  width: auto;
+  height: auto;
+  width: 100%;
   margin: 0;
   border-radius: 7px;
-  padding: 1px;
+  padding: 0;
 }
 
 .gifimage {
-  max-width: 200px;
+  width: 100%;
+  /*height: auto;*/
   margin: 0;
   border-radius: 7px;
   padding: 0;
@@ -193,7 +198,9 @@ footer {
   background-color: #124F57;
 }
 
-
+.fa {
+  display: inline-block;
+}
 
 
 
@@ -201,7 +208,7 @@ footer {
 /*******   MEDIA QUERIES    ******/
 @media (max-width: 567px) {
   .chatcontent {
-    width: 70%;
+    width: 200px;
     margin: 15px auto;
   }
   .contentcontainer {
@@ -211,6 +218,11 @@ footer {
     height: 25px;
     font-size: 14px;
   }
+
+  .messagebox {
+    padding-top: 20px;
+  }
+
   .sendbutton {
     height: 25px;
   }
@@ -222,26 +234,26 @@ footer {
 
 @media (min-width: 568px) and (max-width: 749px) {
   .chatcontent {
-    width: 60%;
+    width: 250px;
     margin: 15px auto;
   }
 }
 
 @media (min-width: 750px) and (max-width: 1024px) {
   .chatcontent {
-    width: 50%;
+    width: 300px;
     margin: 15px auto;
   }
 }
 
 @media (min-width: 1025px) {
   .chatcontent {
-    width: 40%;
+    width: 350px;
     margin: 15px auto;
   }
-  .gifimage {
+  /*.gifimage {
     background-size: 100%;
     max-width: 100%;
     max-height: 100%;
-  }
+  }*/
 }
