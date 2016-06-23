@@ -18,15 +18,17 @@ TIY Assignment - Rhonda &amp; David
 
 
 
-
 * Tuesday 6/21/16
 
-Rhonda
+ Rhonda
 
   * generating ideas for fine tuning the design, i.e. icons
   * tried to get an icon to rotate on submit.
 
-
+ David
+ 
+  * worked on responsiveness
+  * cleaned up ajax calls
 
 
 * Wednesday 6/22/16
@@ -35,3 +37,7 @@ Rhonda
 
   * Add border radius styling to header and footer
   * created a click function that calls for the globe to turn on "send-button"
+ 
+ David
+
+  * Got media queries and responsiveness to cooperate
