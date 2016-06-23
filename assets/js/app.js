@@ -1,22 +1,13 @@
 $(document).ready(function(){
 
 
-
-
-      $(".sendbutton").click(function(){
+        $(".sendbutton").click(function(){//  GLOBE FLIP
         $('.fa-globe').addClass("rotate");
         setTimeout(function(){
         $(".fa-globe").removeClass("rotate");
-},5000);
-});
-console.log('rotate');
-
-
-        // else if (counter >= 1)
-        //   $('.fa-globe').addClass("rotate");
-
-
-
+        },5000);
+        });
+        console.log('rotate');
 
 
 
@@ -48,13 +39,7 @@ console.log('rotate');
       // else {
       //   $('ul').append("<li class='chatcontent'>" + $('input').val() + "</li>");
       // }
-
-
-
-
-
-
-  });
+    });
 
 });
 

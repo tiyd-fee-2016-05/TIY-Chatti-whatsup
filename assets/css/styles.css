@@ -13,32 +13,45 @@
 }
 
 
-
-
 .header {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   border-bottom: 2px solid #fff;
   padding: 10px;
   background-color: #124F57;
   color: #fff;
 }
 
+
+
+
+
 .fa-globe{
   color: #A2F8FA;
   /*font-size: px;*/
   padding-right: 7px;
+  /*float: left;*/
 }
+
 .rotate{
-  color: #02BFC9;
-  /*font-size: px;*/
+  color: #124F57;/*  rotate color blends in with the header background-color  */
   padding-right: 20px;
-  /*transition-timing: ease-in-out;*/
   transform: rotateX(1080deg);
   transition-duration: 5s;
+
 }
 
+/*.fa.fa-question-circle-o{
+  color: #A2F8FA;
+  font-size: 25px;
+  padding-left: 20px;
+}*/
 
 
-.scroll{/**  RG  scroll bar 6/21  **/
+
+
+
+.scroll{
   /*height: 100px;*/
   overflow-y: auto;
   background-color: #124F57;
@@ -47,6 +60,9 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+
+
 
 .contentcontainer {
   padding: 40px;
@@ -57,17 +73,15 @@
   background-color: #124F57;
 }
 
-.fa.fa-question-circle-o{/*  RG  6/22 */
-  color: #A2F8FA;
-  font-size: 40px;
-  padding-right: 20px;
-}
+
 
 .messagebox {
   border-top: 2px solid #fff;
   padding: 10px 20px 10px 20px;
   margin: auto;
 }
+
+
 
 .chatcontent {
   background-color: #53918B;
@@ -83,6 +97,8 @@
   line-height: 1.5;
   /*display: block;*/
 }
+
+
 
 .newmessage {
   height: 35px;
@@ -102,6 +118,9 @@
   color: #darkgray;
 }
 
+
+
+
 .sendbutton {
   height: 35px;
   width: 45px;
@@ -114,6 +133,11 @@
   color: #124F57;
 }
 
+
+
+
+
+/***      APIs      ***/
 .ghimage {
   height: 100px;
   width: auto;
@@ -138,28 +162,43 @@
   padding: 0;
   line-height: 1.5;
 }
+/****************************/
 
-.urllink {
+
+
+
+.urllink {/***  THE GH LINK   ***/
   text-decoration: none;
   color: #456E6A;
 }
 
-.commandstyle {
+
+
+.commandstyle {/*** STYLING IN JS FOR chatcontent ***/
   font-weight: bold;
   background-color: #124F57;
 }
 
 
 
-button:active {
+button:active {/****  color the submit button turn when clicked   ****/
     background-color: #02BFC9;
 }
 
+
+
 footer {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   background-color: #124F57;
 }
 
 
+
+
+
+
+/*******   MEDIA QUERIES    ******/
 @media (max-width: 567px) {
   .chatcontent {
     width: 70%;
